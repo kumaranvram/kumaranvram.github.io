@@ -3,4 +3,12 @@ layout: page
 title: About
 ---
 
-Something about me.
+### Kumaran Venkataraman
+#### Full Stack Developer who likes to [learn|break|fix] things
+
+I am a passionate developer who loves to code and create things new. Love to hack things in learn and learn new languages (spoken and programming). Love solving complex problems and building massivelyscalable systems.
+
+Programmer from a very young age and an advocate of writing clean code. Has a gamut of experience in building backend & mobile applications in both Object oriented and functional paradigm. Has worked with various tech but my recent favourites are Kotlin, Elixir and Rust.
+
+Wanna catch up for a cuppa and talk about tech? Or teach me the language that you speak? Drop me an email at k u m a r a n v r a m [ at ] g m a i l [ d o t ] c o m
+
