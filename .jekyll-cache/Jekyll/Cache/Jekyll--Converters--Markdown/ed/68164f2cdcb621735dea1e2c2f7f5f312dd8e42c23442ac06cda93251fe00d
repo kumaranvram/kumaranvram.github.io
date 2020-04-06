@@ -1,0 +1,2 @@
+I"š<p>I was recently working on an iOS application which requires push notifications. It is a not-so-pleasurable experience for any developer to configure the backend of the application to send push notifications. The general reasons for this displeasure are due to device/token management on the server and worker processes on the server which should send the notifications without blocking the main thread.</p>
+:ET

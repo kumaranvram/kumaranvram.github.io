@@ -1,0 +1,4 @@
+I" <p>Before we start with what Reactive Programming is, let us see how programming has evolved. Typically, a program is written to accomplish a certain task. To accomplish that task, the programmer writes a set of code or instructions, which when execute in that order produces the desired result. 
+<!-- more -->
+Here the programmer focusses on <strong>how</strong> the program is written. In other words, programmer tells the machine in each step how the problem should be solved. This is called as <em>imperative</em> <em>programming</em>.</p>
+:ET

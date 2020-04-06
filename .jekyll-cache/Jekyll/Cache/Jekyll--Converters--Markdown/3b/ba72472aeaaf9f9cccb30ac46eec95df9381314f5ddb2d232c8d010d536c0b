@@ -1,0 +1,14 @@
+I"·	<p><a href="http://www.raspberrypi.org">Raspberry Pi</a>, this credit card sized, single-board, 700 MHz computer has become my recent, and not to mention, an interesting fascination. Being an ardent user of Mac and iOS devices, I was very keen on getting <a href="http://www.apple.com/airplay/">AirPlay</a> running on this $25 device. This would not only be an value for money, but also an interesting hack.</p>
+
+<p>When the search for getting AirPlay working on a Raspberry Pi began, the obvious choice was getting XBMC working on the Pi, which I would get to a little later. First I bumped on <a href="https://github.com/juhovh/shairplay">shairplay</a> which is actually a very good implementation where the developer reverse engineered the Airport Express and got Airplay to tick. After downloading and installing a lot of <a href="http://computers.tutsplus.com/tutorials/using-a-raspberry-pi-as-an-airplay-receiver--mac-54316">dependencies</a>, shairplay started working. 
+<!-- more -->
+According to the few sources, shairplay should work with iOS and Android device. Unfortunately iOS is the only device I could test it with. Also, initially the sound was not audible while the music was being played through Shairport. This small hack helped to get the audio running:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo amixer cset numid=3 n
+</code></pre></div></div>
+<p>where n is 0=auto, 1=headphones, 2=hdmi	
+Moreover, this does not provide display mirroring option from an Apple Device.</p>
+
+<p>Second option to try was to run XBMC and use the inbuilt Airplay option. This comes completely out of the box, all that is should be done is to install RaspBMC and configure Airplay on it. Pretty cool, still no display mirroring.</p>
+
+<p>Finally after a few more hours of search, I bumped on <a href="http://vmlite.com/rplay/">rPlay</a> which ultimately turns into a winner. This piece of software not only provides streaming options, but also makes your Raspberry Pi and external display over the network. The downside of this cool software is that it is still not available for download. I had tried it out by requesting a beta tester license on their forum. I hope that VMLite soon makes it public and continues to support this awesome software rPlay. More information on installing and using rPlay can be found <a href="http://adventuresandwhathaveyou.wordpress.com/2013/09/02/airplay-mirroring-on-raspberry-pi-with-rplay/">here</a>.</p>
+:ET
