@@ -62,14 +62,14 @@ and the Haskell Implementation:
 
 ```haskell
 bottles n
-    |n == 0 = "no more bottles"
-    |n == 1 = "1 bottle"
-    |n > 1 = show n ++ " bottles"
+    | n == 0 = "no more bottles"
+    | n == 1 = "1 bottle"
+    | n > 1 = show n ++ " bottles"
 
 verse n
     | n == 0 = "No more bottles of beer on the wall, no more bottles of beer.\n" ++ 
                "Go to the store and buy some more, 99 bottles of beer on the wall."
-    | n>0 = bottles n ++ " of beer on the wall, " ++ bottles n ++ " of beer.\n" ++ 
+    | n > 0 = bottles n ++ " of beer on the wall, " ++ bottles n ++ " of beer.\n" ++ 
             "Take one down and pass it around, " ++ bottles (n-1) ++ " of beer on the wall.\n" ++
             verse(n-1)
 
