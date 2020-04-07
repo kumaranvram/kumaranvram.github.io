@@ -13,7 +13,7 @@ I was recently introduced me to this problem of `99 Bottles of Beer on the wall`
 > Take one down, pass it around, 98 bottles of beer on the wall...
 >
 >
-> 98 bottles of beer on the wall, 99 bottles of beer.
+> 98 bottles of beer on the wall, 98 bottles of beer.
 >
 > Take one down, pass it around, 97 bottles of beer on the wall...
 >
