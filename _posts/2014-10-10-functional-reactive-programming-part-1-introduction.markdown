@@ -21,13 +21,13 @@ Can you think of writing this logic in any imperative language like Java or C#? 
 
 That is what Declarative programming paradigm brings to the table.
 
-###Functional Reactive Programming
+### Functional Reactive Programming
 Functional Reactive programming is a paradigm which combines two declarative programming paradigms *functional* and *reactive*. Let us look at each individually.
 
 ####Reactive Programming
 If you have tried reading about an example for Reactive programming, this might be a cliché to you. Let us think of a spreadsheet and assume that cell C1 is given the formula **=A1+B1**. Now everytime the values of cell A1 or B1 change, the value of cell C1 automatically changes. The cell C1 reacts to the changes of A1 and B1. We do not have to reassign the formula everytime. In short, we declare the value of C as A + B and we rely on the truthfulness of the result, without paying much attention to how the value is computed.
 
-####Functional Programming
+#### Functional Programming
 Functional programming is a paradigm with which we can structure our programs treating functions as our first class objects. These functions are immutable. A function is always expected to return the same output for the same input. Always. This may give jitters to our thought because we, as programmers, are used to the mutable state of objects and our programs highly rely on that.
 
 This is where Functional Reactive Programming kicks in, giving us the best of the both worlds, imperative and functional. FRP treats user inputs as functions which are mutable, that is, whose values change over time. This requires us to step us from the comfort zone of imperative programming and requires us to change our mindset to adapt FRP to be more efficient. 
