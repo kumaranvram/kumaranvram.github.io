@@ -8,11 +8,11 @@ categories: [grpc, rust, programming]
 
 Even today, many companies use [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) as the go-to mechanism for service to service communication. This architecture is based on text-based messaging mechanisms like JSON or XML. 
 
-This is good in many aspects such as it is easy to understand by developers, built on top of HTTP and almost all languages have a good HTTP support and the server and client are loosely coupled. This makes it great for external facing or public facing APIs.
+This is good in many aspects such as, it is easily understood by developers. Since it is built on top of HTTP and all languages have a good HTTP support, client libraries can be written for any language. Additionally, the server and client are loosely coupled. This makes it great for external facing or public facing APIs.
 
 But REST has a fair share of drawbacks which actually does not make it ideal for internal service-to-service communications. 
 
-- To start with, there is no formal machine readable API contract. This would mean that for most of the supported languages, the client libraries have to be written by developers, which requires a lot of time and effort and in turn, money. 
+- To start with, there is no formal machine readable API contract. This would mean that for most of the supported languages, the client libraries have to be written by developers, which requires a lot of time and effort. 
 
 - Second, since it is based on a text based protocol, say JSON, there is an overhead of parsing the request or the response using libraries like Gson or Jackson. These textual representations are not network friendly.
 
@@ -21,7 +21,10 @@ But REST has a fair share of drawbacks which actually does not make it ideal for
 - In a lot of cases, REST APIs are just HTTP endpoints. Most of us would have seen/written an end point resembling `/sendMail` or `/restoreBackup` etc, which do not necessarily follow the REST pattern.
 
 
-Here is where gRPC saves the day. By the definition of [grpc.io](https://grpc.io) gRPC is a modern open source high performance RPC framework that can run in any environment. This is a system built on top of HTTP/2 protocol. This was initially developed by Google and now it is widely adopted by a variety of companies such as Google, Netflix, Square, GoJek etc. This uses [protocol buffers aka protobuf](https://developers.google.com/protocol-buffers) for its interface description.
+Here is where gRPC saves the day. By the definition of [grpc.io](https://grpc.io) 
+> gRPC is a modern open source high performance RPC framework that can run in any environment. 
+
+This is a system built on top of HTTP/2 protocol. This was initially developed by Google and now it is widely adopted by a variety of companies such as Google, Netflix, Square, GoJek etc. This uses [protocol buffers aka protobuf](https://developers.google.com/protocol-buffers) for its interface description.
 
 To start writing a service, we start with writing a `.proto` file
 
@@ -52,7 +55,7 @@ service PokeDex {
 }
 ```
 
-This proto files acts as a specification or a contract for the service to be implemented. This service contract is shared between the server and the client. This is pretty consice, easy for the developer to read and understand. All the developer does here is define the methods that are exposed on the server for the client to call remotely. 
+This proto files acts as a specification or a contract for the service to be implemented. This service contract is shared between the server and the client. This is pretty concise, easy for the developer to read and understand. All the developer does here is define the methods that are exposed on the server for the client to call remotely. 
 
 Most importantly, these proto files are machine readble which means that when run through a compiler ([protoc](http://google.github.io/proto-lens/installing-protoc.html)), this is going to generate the necessary files needed for writing the server skeleton code and the client libraries. 
 
