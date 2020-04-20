@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "99 Bottles of beer"
-date: 2019-11-17 19:42
+date: 2019-12-27 19:42
 categories: [functional, oo, elixir, haskell, ruby, programming]
 ---
 
