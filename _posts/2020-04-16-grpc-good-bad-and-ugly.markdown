@@ -26,7 +26,7 @@ Here is where gRPC saves the day. By the definition of [grpc.io](https://grpc.io
 
 This is a system built on top of HTTP/2 protocol. This was initially developed by Google and now it is widely adopted by a variety of companies such as Google, Netflix, Square, GoJek etc. This uses [protocol buffers aka protobuf](https://developers.google.com/protocol-buffers) for its interface description.
 
-To start writing a service, we start with writing a `.proto` file
+To start writing a service, we start with writing a `.proto` file. For example, if I (being a Pokemon fan) want to create a Pokedex service, the proto shall look like this:
 
 ```proto
 syntax = "proto3";
@@ -81,4 +81,7 @@ Despite these advantages, gRPC also comes with its share is caveats.
 - Error handling 
 - Managing breaking changes on the API
 
-I believe that the advantages of gRPC outweigh the disadvantages, thus making it a logical and a suitable choice for internal service-to-service communication. I shall also try to blog about implementing the aforesaid Pokedex service in Rust in my next post.
+I believe that the advantages of gRPC outweigh the disadvantages, thus making it a logical and a suitable choice for internal service-to-service communication. I shall also blog about implementing the aforesaid Pokedex service in Rust in [my next post](/grpc-and-rust).
+
+#### Disclaimer
+Pokémon, Pokêdex names and information (c) 1995-2014 Nintendo/Game freak. Those are being referenced here entirely for education purposes only.
