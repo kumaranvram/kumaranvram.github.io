@@ -6,7 +6,7 @@ comments: true
 categories: [grpc, rust, programming]
 ---
 
-As a continuation of the [previous post](/grpc-good-bad-and-ugly), I intend to implement a gRPC service in Rust. I shall use the [tonic](https://github.com/hyperium/tonic) crate for implement it in this example. To start with we need rust lang and cargo installed as mentioned [here](https://www.rust-lang.org/learn/get-started).
+As a continuation of the [previous post](/grpc-good-bad-and-ugly), I intend to implement a gRPC service in Rust. I shall use the [tonic](https://github.com/hyperium/tonic) crate for implementing it in this example. To start with we need rust lang and cargo installed as mentioned [here](https://www.rust-lang.org/learn/get-started).
 
 Let's create a cargo project for the same. 
 
@@ -14,7 +14,7 @@ Let's create a cargo project for the same.
 cargo new grpc-example-pokedex
 ```
 
-This will create a new rust project with a `Cargo.toml` file and an `src` folder. Tonic and other dependencies we need for the project needs to be added to the Cargo.toml file
+This will create a new rust project with a `Cargo.toml` file and a `src` folder. Tonic and other dependencies we need for the project needs to be added to the Cargo.toml file
 
 ```toml
 [dependencies]

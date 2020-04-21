@@ -57,7 +57,7 @@ service PokeDex {
 
 This proto files acts as a specification or a contract for the service to be implemented. This service contract is shared between the server and the client. This is pretty concise, easy for the developer to read and understand. All the developer does here is define the methods that are exposed on the server for the client to call remotely. 
 
-Most importantly, these proto files are machine readble which means that when run through a compiler ([protoc](http://google.github.io/proto-lens/installing-protoc.html)), this is going to generate the necessary files needed for writing the server skeleton code and the client libraries. 
+Most importantly, these proto files are machine readable which means that when run through a compiler ([protoc](http://google.github.io/proto-lens/installing-protoc.html)), this is going to generate the necessary files needed for writing the server skeleton code and the client libraries. 
 
 For example, let's take Go as an example:
 
