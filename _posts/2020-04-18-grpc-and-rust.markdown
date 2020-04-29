@@ -128,7 +128,11 @@ name = "server"
 path = "src/server.rs"
 ```
 
-Now we can start the server with `cargo run --bin server`, which should start the server listening at port 5000.
+Now we can start the server with the command:
+```bash
+$ cargo run --bin server
+```
+which should start the server listening at port 5000.
 
 ### Implementing the client
 
@@ -163,7 +167,10 @@ name = "client"
 path = "src/client.rs"
 ```
 
-Now we can run the client with the command `cargo run --bin client`
+Now we can run the client with the command 
+```bash
+$ cargo run --bin client
+```
 
 This implements a gRPC client and server in Rust in less than 50 lines.
 

@@ -24,7 +24,7 @@ That is what Declarative programming paradigm brings to the table.
 ### Functional Reactive Programming
 Functional Reactive programming is a paradigm which combines two declarative programming paradigms *functional* and *reactive*. Let us look at each individually.
 
-####Reactive Programming
+#### Reactive Programming
 If you have tried reading about an example for Reactive programming, this might be a cliché to you. Let us think of a spreadsheet and assume that cell C1 is given the formula **=A1+B1**. Now everytime the values of cell A1 or B1 change, the value of cell C1 automatically changes. The cell C1 reacts to the changes of A1 and B1. We do not have to reassign the formula everytime. In short, we declare the value of C as A + B and we rely on the truthfulness of the result, without paying much attention to how the value is computed.
 
 #### Functional Programming

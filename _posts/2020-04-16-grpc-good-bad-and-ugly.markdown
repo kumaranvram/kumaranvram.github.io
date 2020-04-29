@@ -62,7 +62,7 @@ Most importantly, these proto files are machine readable which means that when r
 For example, let's take Go as an example:
 
 ```bash
-protoc --go_out=plugins-grpc:. ./pokedex.proto
+$ protoc --go_out=plugins-grpc:. ./pokedex.proto
 ```
 would generate a bunch of code (pokedex.pb.go in this case) that you need to start writing the server and client with a few lines of code.
 
