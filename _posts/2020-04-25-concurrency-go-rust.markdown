@@ -2,6 +2,7 @@
 layout: post
 title: "Channels: Go and Rust"
 date: 2020-04-25 08:19
+comments: true
 categories: [channels, rust, go]
 ---
 
