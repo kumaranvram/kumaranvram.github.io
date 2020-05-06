@@ -105,4 +105,4 @@ Similar to Go, the `tx.send()` method is a non-blocking call where as the `rx.re
 
 One other thing that needs to be observed here is that Go provides co-routines which are runtime level threads mapped onto OS level threads. The channels and coroutines are a builtin feature in Go. A coroutine is spawned using the `go` keyword. Rust does not have the concept of runtime threads or have built in channels. It allows the developer to spawn OS level threads and channels are provided as a part of the standard library. 
 
-Channels are quite useful in Rust while we implement a gRPC service that streams data from one end to the other. This implementation will be discussed in the next post. 
+Channels are quite useful in Rust while we implement a gRPC service that streams data from one end to the other. This implementation will be discussed in the [next post](/grpc-streaming-rust).
