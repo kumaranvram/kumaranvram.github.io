@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "gRPC: Streaming data in Rust"
+title: "Masks I wear"
 date: 2020-05-01 21:56
 comments: true
-categories: [grpc, rust, programming]
+categories: [poems, english]
 ---
+
 
 One of the important advantages of gRPC is that we can stream data between the server and the client. This post explores how we can achieve the same. 
 
