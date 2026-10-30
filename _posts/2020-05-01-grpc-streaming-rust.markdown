@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Masks I wear"
+title: "gRPC: Streaming data in Rust"
 date: 2020-05-01 21:56
 comments: true
-categories: [poems, english]
+categories: [grpc, rust, programming]
 ---
 
 
